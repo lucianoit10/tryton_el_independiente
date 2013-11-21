@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <record model="ir.action.wizard" id="open_estado_cuenta_entidad_wizard">
+            <field name="name">Estado Cuenta de Cliente</field>
+            <field name="wiz_name">reportes_el_independiente.open_estado_cuenta_entidad</field>
+            <field name='model'>edicion.edicion</field>
+        </record>
+        <record model="ir.action.keyword" id="open_cuenta_cliente_keyword">
+            <field name="keyword">form_print</field>
+            <field name="model">edicion.edicion,-1</field>
+            <field name="action" ref="open_estado_cuenta_entidad_wizard"/>
+        </record>
+        <record model='ir.ui.view' id='seleccion_entidad_start_view_form'>
+            <field name='model'>reportes_el_independiente.seleccion_entidad.start</field>
+            <field name='type'>form</field>
+            <field name='name'>seleccion_entidad_start_view_form</field>
+        </record>
+         <record model="ir.action.report" id="reporte_cuenta_cliente">
+            <field name="name">Reporte Estado de Cuenta Cliente</field>
+            <field name="model">edicion.edicion</field>
+            <field name="report_name">reportes_el_independiente.reporte_estado_cuenta_entidad</field>
+            <field name="report">reportes_el_independiente/cuenta_cliente.odt</field>
+            <field name="style">company/header_A4.odt</field>
+        </record>
+    </data>
+</tryton>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<form string="Tipo y Categoria" col="4">
+    <label name="diario"/>
+    <field name="diario" xexpand="0"/>
+    <label name="categoriaDiario"/>
+    <field name="categoriaDiario"/>
+    <newline/>
+    <label name="digital"/>
+    <field name="digital" xexpand="0"/>
+    <label name="categoriaDigital"/>
+    <field name="categoriaDigital"/>
+    <newline/>
+    <label name="radio"/>
+    <field name="radio" xexpand="0"/>
+    <label name="categoriaRadio"/>
+    <field name="categoriaRadio"/>
+</form>

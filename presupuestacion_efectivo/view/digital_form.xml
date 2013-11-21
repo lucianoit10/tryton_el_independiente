@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<form string="Digital" col="6">
+    <label name="cant_meses"/>
+    <field name="cant_meses" xexpand="0" width="150"/>
+    <label name="inicio"/>
+    <field name="inicio" xexpand="0" width="150"/>
+    <newline/>
+    <separator id="s9" colspan='6'/>
+    <label name="expandible" string ="¿EXPANDIBLE?"/>
+    <field name="expandible"  xexpand="0"/>
+    <newline/>
+    <separator id="s10" colspan='6'/>
+    <label name="de"/>
+    <field name="de" xexpand="0" width="150"/>
+    <label name="a"/>
+    <field name="a" xexpand="0" width="150"/>
+    <label name="recargo" string = "RECARGO(%):"/>
+    <field name="recargo" xexpand="0" width="150"/>
+    <newline/>
+    <separator id="s11" colspan='6'/>
+    <label name="bonificacion" string ="¿BONIFICACION?"/>
+    <field name="bonificacion"  xexpand="0"/>
+    <newline/>
+    <label name="tipo_bonif" string=" "/>
+    <field name="tipo_bonif" xexpand="0" width="150"/>
+    <label name="valor"/>
+    <field name="valor"  xexpand="0" width="150"/>
+    <label name="motivo"/>
+    <field name="motivo" xexpand="0" width="150"/>
+</form>

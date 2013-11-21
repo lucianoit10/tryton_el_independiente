@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+            <!-- vista -->
+            <record model='ir.ui.view' id='tipo_y_categoria_form'>
+                <field name='model'>presupuestacion_cta_cte.tipo_y_categoria.start</field>
+                <field name='type'>form</field>
+                <field name='name'>tipo_y_categoria_form</field>
+            </record>
+            <record model='ir.ui.view' id='producto_form'>
+                <field name='model'>presupuestacion_cta_cte.producto</field>
+                <field name='type'>form</field>
+                <field name='name'>producto_form</field>
+            </record>
+            <record model='ir.ui.view' id='aviso_comun_form'>
+                <field name='model'>presupuestacion_cta_cte.aviso_comun</field>
+                <field name='type'>form</field>
+                <field name='name'>aviso_comun_form</field>
+            </record>
+            <record model='ir.ui.view' id='aviso_especial_form'>
+                <field name='model'>presupuestacion_cta_cte.aviso_especial</field>
+                <field name='type'>form</field>
+                <field name='name'>aviso_especial_form</field>
+            </record>
+            <record model='ir.ui.view' id='funebre_comun_form'>
+                <field name='model'>presupuestacion_cta_cte.funebre_comun</field>
+                <field name='type'>form</field>
+                <field name='name'>funebre_comun_form</field>
+            </record>
+            <record model='ir.ui.view' id='funebre_destacado_form'>
+                <field name='model'>presupuestacion_cta_cte.funebre_destacado</field>
+                <field name='type'>form</field>
+                <field name='name'>funebre_destacado_form</field>
+            </record>
+            <record model='ir.ui.view' id='clasificado_comun_form'>
+                <field name='model'>presupuestacion_cta_cte.clasificado_comun</field>
+                <field name='type'>form</field>
+                <field name='name'>clasif_comun_form</field>
+            </record>
+            <record model='ir.ui.view' id='clasificado_destacado_form'>
+                <field name='model'>presupuestacion_cta_cte.clasificado_destacado</field>
+                <field name='type'>form</field>
+                <field name='name'>clasif_destacado_form</field>
+            </record>
+            <record model='ir.ui.view' id='edicto_judicial_form'>
+                <field name='model'>presupuestacion_cta_cte.edicto_judicial</field>
+                <field name='type'>form</field>
+                <field name='name'>edicto_judicial_form</field>
+            </record>
+            <record model='ir.ui.view' id='centimetros_form'>
+                <field name='model'>presupuestacion_cta_cte.centimetros</field>
+                <field name='type'>form</field>
+                <field name='name'>centimetros_form</field>
+            </record>
+            <record model='ir.ui.view' id='seleccion_fechas_form'>
+                <field name='model'>presupuestacion_cta_cte.seleccion_fechas</field>
+                <field name='type'>form</field>
+                <field name='name'>seleccion_fechas_form</field>
+            </record>
+            <record model='ir.ui.view' id='finalizar_form'>
+                <field name='model'>presupuestacion_cta_cte.finalizar</field>
+                <field name='type'>form</field>
+                <field name='name'>finalizar_form</field>
+            </record>
+            <!-- wizard -->
+            <record model="ir.action.wizard" id="act_wizard_ejemplo">
+                <field name="name">Asistente Cuenta Corriente</field>
+                <field name="wiz_name">presupuestacion_cta_cte.presupuestacion_wizard</field>
+                <field name='model'>sale.sale</field>
+            </record>
+            <!-- keyword -->
+            <record model="ir.action.keyword" id="act_open_wizard_ejemplo_keyword">
+                <field name="keyword">form_action</field>
+                <field name="model">sale.sale,-1</field>
+                <field name="action" ref="act_wizard_ejemplo"/>
+            </record>
+    </data>
+</tryton>

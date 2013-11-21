@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<form string="Centimetros">
+    <label name="cant_centimetros" />
+    <field name="cant_centimetros" />
+    <newline/>
+    <label name="cant_columnas" />
+    <field name="cant_columnas" />
+    <newline/>
+    <label name="precio_cm" />
+    <field name="precio_cm" />
+    <newline/>
+    <separator name="descripcion" string="DESCRIPCION" colspan='4'/>
+    <newline/>
+    <field name="descripcion" colspan='4'/>
+</form>

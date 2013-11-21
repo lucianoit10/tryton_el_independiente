@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <record model="ir.action.act_window" id="act_invoice_out_invoice_form">
+            <field name="name">Invoices</field>
+            <field name="res_model">account.invoice</field>
+            <field name="domain">[('type', '=', 'out_invoice')]</field>
+            <field name="context">{'type': 'out_invoice'}</field>
+            <field name="search_value"></field>
+        </record>
+        <record model="ir.action.act_window.domain" id="act_invoice_out_invoice_domain_pagada">
+            <field name="name">Posted</field>
+            <field name="sequence" eval="40"/>
+            <field name="domain">[('state', '=', 'paid')]</field>
+            <field name="act_window" ref="act_invoice_out_invoice_form"/>
+        </record>
+    </data>
+</tryton>
